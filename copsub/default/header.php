@@ -50,6 +50,13 @@
     		background-repeat: no-repeat;
 			}
 			
+			.main_front_section_2_overlay_3_1 {
+			  background-image:url('<?php echo get_site_url()?>/wp-content/themes/cphsuborbitals/img/square_download.png');
+			  background-size: 40%;
+			  background-position: right bottom;
+    		background-repeat: no-repeat;
+			}
+			
 			.wrapper_front_section_3 {
 			}
 			.wrapper_front_section_3:after {

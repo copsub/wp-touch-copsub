@@ -1227,6 +1227,18 @@ form#commentform input {
   font-weight: bold;
   color: #000;
 }
+.main_front_section_2_overlay_3_1 {
+  position: absolute;
+  top: 30%;
+  bottom: 47%;
+  right: 39%;
+  left: 34%;
+  background-color: #FF4F00;
+  padding: 1%;
+  font: 2.5vw helvetica, sans-serif;
+  font-weight: bold;
+  color: #000;
+}
 .main_front_section_2_overlay_4 {
   position: absolute;
   top: 55%;

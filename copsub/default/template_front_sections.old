@@ -159,9 +159,7 @@ if ($front_section_1_active) {
 		<div>We’re 50 geeks building and flying our own rockets. </div>
 		<div>One of us will fly into space. </div>
   </div>
-
-	
-	
+<!--
 	<a style="text-decoration: none;" href="<?php $server_name ?>/support-us/" onclick="_gaq.push(['_trackEvent','Support','Click','Big donate button FP']);">
 	<div class="main_front_section_2_overlay_3 overlay_show">
 		It’s 100 % nonprofit and crowdfunded. Please donate here.
@@ -169,16 +167,93 @@ if ($front_section_1_active) {
   </div>
 	</a>
 	
-	<a style="text-decoration: none;" href="<?php $server_name ?>/ressources/" onclick="_gaq.push(['_trackEvent','Support','Click','Big download button FP']);">
-	<div class="main_front_section_2_overlay_3_1 overlay_show">
+	-->
+	
+	
+	
+	
+	
+	<div style="position: relative; width:100%; margin-top: 44px;">
+		<?php if($event_mode_active) {?>
+		<div style="padding-right: 60px; margin: 0 auto; width: 960px;">
+		<?php } else {?>
+		<div style="padding-right: 360px; margin: 0 auto; width: 960px;">
+		<?php }?>
+			
+	
+	<table style="width:100%">
+		<tr>
+		<td style="width: 300px;padding-left:0px;">
+		<a style="text-decoration: none;" href="<?php $server_name ?>/support-us/" onclick="_gaq.push(['_trackEvent','Support','Click','Big donate button FP']);">
+		<div class="donatesquare arrowcontainer" style="background-image:url('<?php echo $themepath?>/img/donatesquare.png'); background-position: right bottom;background-repeat:no-repeat;">
+		It’s 100 % nonprofit and crowdfunded. Please donate here.
+		<div class="arrow"></div>
+		</div>
+		</a>
+		</td>
+		<?php if($indiegogo_mode_active) {?>
+		<td style="width: 300px;padding-left:15px;">
+		<a style="text-decoration: none;" href="http://igg.me/at/copsub" onclick="_gaq.push(['_trackEvent','Support','Click','Big Support Nexoe button FP']);">
+		<div class="indiesquare arrowcontainer" style="background-image:url('<?php echo $themepath?>/img/indifund.png'); background-position: right bottom;background-repeat:no-repeat;">
+		Fund the launch of our Nexø I rocket.<br><br> Join the campaign by clicking here.
+		<div class="arrow"></div>
+		</div>
+		</a>
+		</td>
+		<?php  } ?>
+		<?php if($event_mode_active) {?>
+		<?php if($url_link_ready) {?>
+		<td style="width: 300px;padding-left:15px;">
+		<a style="text-decoration: none;" href="<?php echo $url_for_post_link ?>"  onclick="_gaq.push(['_trackEvent','Events','Click','Big event button FP']);">
+		<div  class="eventsquaretop arrowcontainer">
+		<?php echo $event_button_text ?>
+		<div class="arrow"></div>
+		</div>
+		</a>
+		<a style="text-decoration: none;" href="<?php echo $url_for_steaming_link ?>"  target="_blank"   onclick="_gaq.push(['_trackEvent','Events','Click','Big YT button FP']);">
+		<div  class="eventsquarebottom arrowcontainer" style="background-image:url('<?php echo $themepath?>/img/testsquare.png'); background-position: center bottom;background-repeat:no-repeat;">
+		Live feed - Click here.
+		</div>
+		</a>
+		</td>
+		<?php } else {?>
+		<td style="width: 300px;padding-left:15px;">
+		<a style="text-decoration: none;" href="<?php echo $url_for_post_link ?>"  onclick="_gaq.push(['_trackEvent','Events','Click','Big event button FP']);">
+		<div  class="eventsquaretop arrowcontainer">
+		<?php echo $event_button_text ?>
+		<div class="arrow"></div>
+		</div>
+		</a>
+		<div  class="eventsquarebottom arrowcontainer" style="">
+		Videolink will be made available here as soon as possible.
+		</div>
+		</td>
+		<?php }?>
+		<?php } else {?>
+		<?php }?>
+		<?php //temp download section ?>
+		<td style="width: 300px;padding-left:15px;">
+		<a style="text-decoration: none;" href="<?php $server_name ?>/ressources/" onclick="_gaq.push(['_trackEvent','Support','Click','Big download button FP']);">
+		<div class="donatesquare arrowcontainer" style="background-image:url('<?php echo $themepath?>/img/square_download.png'); background-position: right bottom;background-repeat:no-repeat;">
 		Download posters, wallpapers and more here.
-		<div><img src="<?php echo get_site_url()?>/wp-content/themes/cphsuborbitals/img/pointer-black.png" style="width: 12%;"></div>
-  </div>
-	</a>	
-	
-	
-	
+		<div class="arrow"></div>
+		</div>
+		</a>
+		</td>
 
+			
+			
+		<td style="width: 30px;">&nbsp;</td>
+		</tr>
+		</table>
+	
+	
+	
+			</div>
+		</div>
+	
+	
+	
 	
 	
 	
