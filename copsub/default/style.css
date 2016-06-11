@@ -1218,27 +1218,48 @@ form#commentform input {
 .main_front_section_2_overlay_3 {
   position: absolute;
   top: 30%;
-  bottom: 47%;
-  right: 67%;
+  bottom: 49.5%;
+  right: 6%;
   left: 6%;
-  background-color: #FF4F00;
+}
+
+table td:first-of-type {
+	padding: 1%;	
+}
+
+.main_front_big_button_S2O3_1 {
+	vertical-align: top; 
+	height: 100%;
+	width: 28%;
+	background-color: #FF4F00;
   padding: 1%;
   font: 2.5vw helvetica, sans-serif;
   font-weight: bold;
   color: #000;
 }
-.main_front_section_2_overlay_3_1 {
-  position: absolute;
-  top: 30%;
-  bottom: 47%;
-  right: 39%;
-  left: 34%;
-  background-color: #FF4F00;
+
+.main_front_big_button_S2O3_2 {
+	vertical-align: top; 
+	height: 100%;
+	width: 28%;
+	background-color: #FF4F00;
   padding: 1%;
   font: 2.5vw helvetica, sans-serif;
   font-weight: bold;
   color: #000;
 }
+
+.main_front_big_button_S2O3_3 {
+	vertical-align: top; 
+	height: 100%;
+	width: 28%;
+	background-color: #FF4F00;
+  padding: 1%;
+  font: 2.5vw helvetica, sans-serif;
+  font-weight: bold;
+  color: #000;
+}
+
 .main_front_section_2_overlay_4 {
   position: absolute;
   top: 55%;

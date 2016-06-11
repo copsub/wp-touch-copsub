@@ -43,14 +43,17 @@
 			.wrapper_front_section_2:after {
   			padding-top: <?php echo $background_image_front_section_2_ratio; ?>%;
 			}
-			.main_front_section_2_overlay_3 {
+			.main_front_big_button_S2O3_1 {
 			  background-image:url('<?php echo get_site_url()?>/wp-content/themes/cphsuborbitals/img/donatesquare.png');
 			  background-size: 40%;
 			  background-position: right bottom;
     		background-repeat: no-repeat;
 			}
 			
-			.main_front_section_2_overlay_3_1 {
+			.main_front_big_button_S2O3_2 {
+
+			}	
+			.main_front_big_button_S2O3_3 {
 			  background-image:url('<?php echo get_site_url()?>/wp-content/themes/cphsuborbitals/img/square_download.png');
 			  background-size: 40%;
 			  background-position: right bottom;

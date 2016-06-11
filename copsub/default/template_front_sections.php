@@ -4,7 +4,7 @@ Template Name: Frontpage Sections Template (Mobile)
 */
 ?>
 
-<?php get_header('front'); 
+	<?php get_header('front'); 
 
   $server_name = $_SERVER['SERVER_NAME'];
 
@@ -63,19 +63,19 @@ Template Name: Frontpage Sections Template (Mobile)
   
 ?>
 
-<div id="content">
+	<div id="content">
 
-<?php // ###Launch mode section start### ----------------------------------------------------------------------- ?>
+		<?php // ###Launch mode section start### ----------------------------------------------------------------------- ?>
 
-<?php //Launch mode background 
+		<?php //Launch mode background 
 if ($front_section_1_active) {
 ?>
 
-<div class="wrapper_front_section_1">
-	<div class="main_front_section_1"></div>
-	<?php //---Countdown section--------------- ?>
-	<div class="main_front_section_1_overlay_1 overlay_show">	
-		<?php 
+		<div class="wrapper_front_section_1">
+			<div class="main_front_section_1"></div>
+			<?php //---Countdown section--------------- ?>
+			<div class="main_front_section_1_overlay_1 overlay_show">
+				<?php 
 		switch ($show_countdown_on_frontpage) {
 			case "hidden":
 				echo '<div class="front_launch_countdown"></div>';
@@ -98,190 +98,239 @@ if ($front_section_1_active) {
 				break;
 		}
 		?>
-		<?php if($show_countdown_on_frontpage && ($time_hiding_countdown_frontpage >= strtotime(now))) { ?>
-		<?php } else {?>
-		<?php } ?>
-	</div>
+				<?php if($show_countdown_on_frontpage && ($time_hiding_countdown_frontpage >= strtotime(now))) { ?>
+				<?php } else {?>
+				<?php } ?>
+			</div>
 
-<?php //---Countdown section End ---------- ?>
-
-
-<?php //---Front Text Launch section--------------- ?>
-
-	<div class="main_front_section_1_overlay_2 overlay_show">	
-		<?php echo $front_section_1_headline_l1;?>
-	</div>
-
-<?php //---Front Text Launch section End ---------- ?>
+			<?php //---Countdown section End ---------- ?>
 
 
-<?php //---Front Mission Patch section--------------- ?>
+			<?php //---Front Text Launch section--------------- ?>
 
-	<div class="main_front_section_1_overlay_3 overlay_show">	
-	</div>
+			<div class="main_front_section_1_overlay_2 overlay_show">
+				<?php echo $front_section_1_headline_l1;?>
+			</div>
 
-<?php //---Front Mission Patch section End ---------- ?>
-
-
-<?php //---Front Mission Page Button section--------------- ?>
-
-	<a style="text-decoration: none;"  href="<?php echo $front_section_1_link_button ?>" title="" onclick="_gaq.push(['_trackEvent','Media','Click','Watch Us on FP']);">
-	<div class="main_front_section_1_overlay_4 overlay_show">	
-		Go to the mission page
-	</div>
-	</a>
-
-<?php //---Front Mission Page Button End ---------- ?>
+			<?php //---Front Text Launch section End ---------- ?>
 
 
+			<?php //---Front Mission Patch section--------------- ?>
+
+			<div class="main_front_section_1_overlay_3 overlay_show">
+			</div>
+
+			<?php //---Front Mission Patch section End ---------- ?>
 
 
-</div>
+			<?php //---Front Mission Page Button section--------------- ?>
 
+			<a style="text-decoration: none;" href="<?php echo $front_section_1_link_button ?>" title="" onclick="_gaq.push(['_trackEvent','Media','Click','Watch Us on FP']);">
+				<div class="main_front_section_1_overlay_4 overlay_show">
+					Go to the mission page
+				</div>
+			</a>
 
-
-<?php  } ?>
+			<?php //---Front Mission Page Button End ---------- ?>
 
 
 
 
-
-<?php //----------- Launch mode section end ----------------------------------------------------------------------- ?>
-
-<?php //----------- Manned top section -----------------------------------------------------------------------------?>
-
-<div class="wrapper_front_section_2">
-  <div class="main_front_section_2"></div>
-  <div class="main_front_section_2_overlay_1 overlay_show">		
-		The world’s only amateur space program				
-  </div>
-  <div class="main_front_section_2_overlay_2 overlay_show">
-		<div>We’re 50 geeks building and flying our own rockets. </div>
-		<div>One of us will fly into space. </div>
-  </div>
-
-	
-	
-	<a style="text-decoration: none;" href="<?php $server_name ?>/support-us/" onclick="_gaq.push(['_trackEvent','Support','Click','Big donate button FP']);">
-	<div class="main_front_section_2_overlay_3 overlay_show">
-		It’s 100 % nonprofit and crowdfunded. Please donate here.
-		<div><img src="<?php echo get_site_url()?>/wp-content/themes/cphsuborbitals/img/pointer-black.png" style="width: 12%;"></div>
-  </div>
-	</a>
-	
-	<a style="text-decoration: none;" href="<?php $server_name ?>/ressources/" onclick="_gaq.push(['_trackEvent','Support','Click','Big download button FP']);">
-	<div class="main_front_section_2_overlay_3_1 overlay_show">
-		Download posters, wallpapers and more here.
-		<div><img src="<?php echo get_site_url()?>/wp-content/themes/cphsuborbitals/img/pointer-black.png" style="width: 12%;"></div>
-  </div>
-	</a>	
-	
-	
-	
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
- 	<div class="main_front_section_2_overlay_4 overlay_show">
-		<div>Aiming high:</div>
-		<div>The manned Spica mission</div>
-	</div>
- 	<div class="main_front_section_2_overlay_5 overlay_show">
- 		Every step we take is leading to flying a person into space on what will be our biggest rocket: Spica
- 	</div>
- 	
-	<a style="text-decoration: none;" rel="wp-video-lightbox" href="https://www.youtube.com/watch?v=1i3HDv2s7io&amp;width=640&amp;height=640" title="" onclick="_gaq.push(['_trackEvent','Media','Click','Watch Us on FP']);">
- 	<div class="main_front_section_2_overlay_6 overlay_show">
-		<span style="">See our intro video</span>
-		<img src="<?php echo get_site_url()?>/wp-content/themes/cphsuborbitals/img/pointer-black.png" style="width: 12%; vertical-align: middle;">
- 	</div>
-	</a>
-
-</div>
+		</div>
 
 
-<?php //----------- Manned top section end -------------------------------------------------------------------------?>
+
+		<?php  } ?>
 
 
-<?php //----------- Widget section ---------------------------------------------------------------------------------?>
 
-<div class="wrapper_front_section_3">
-  <div class="main_front_section_3"></div>
 
-  <div class="main_front_section_3_overlay_1 overlay_show">
-  		
-		<div class="front-widget">
-  		<?php // lastest news col ?>
-    	<div class="widget-header-front">Latest blog posts</div>
-     	<ul>
-      <?php if ( $query_blog->have_posts() ) : $query_blog->have_posts();
+
+		<?php //----------- Launch mode section end ----------------------------------------------------------------------- ?>
+
+		<?php //----------- Manned top section -----------------------------------------------------------------------------?>
+
+		<div class="wrapper_front_section_2">
+			<div class="main_front_section_2"></div>
+			<div class="main_front_section_2_overlay_1 overlay_show">
+				The world’s only amateur space program
+			</div>
+			<div class="main_front_section_2_overlay_2 overlay_show">
+				<div>We’re 50 geeks building and flying our own rockets. </div>
+				<div>One of us will fly into space. </div>
+			</div>
+
+
+
+
+
+
+
+
+			<div class="main_front_section_2_overlay_3 overlay_show">
+
+				<table style="height: 100%">
+					<tr>
+						<td class="main_front_big_button_S2O3_1">
+							<a style="text-decoration: none; color: black;" href="<?php $server_name ?>/support-us/" onclick="_gaq.push(['_trackEvent','Support','Click','Big donate button FP']);">
+								It’s 100 % nonprofit and crowdfunded. Please donate here.
+		  					<div><img src="<?php echo get_site_url()?>/wp-content/themes/cphsuborbitals/img/pointer-black.png" style="width: 12%;"></div> 
+							</a>
+						</td>
+						
+						
+						
+				<?php if($event_mode_active) {?>
+					<?php if($url_link_ready) {?>
+						<td class="main_front_big_button_S2O3_2">
+							<a style="text-decoration: none;color: black;" href="<?php echo $url_for_steaming_link ?>" onclick="_gaq.push(['_trackEvent','Support','Click','Big download button FP']);">
+								<?php echo $event_button_text ?>
+								<div style="font-size: 2.5vw;margin-top: 5%">
+										Live feed - Click here.
+								</div>
+								<div style="padding: 5% 0% 0% 30%;"><img src="<?php echo get_site_url()?>/wp-content/themes/cphsuborbitals/img/testsquare.png" style="width: 55%;"></div>
+							</a>
+						</td>
+					<?php } else {?>
+						<td class="main_front_big_button_S2O3_2">
+							<a style="text-decoration: none;color: black;" href="<?php echo $url_for_post_link ?>" onclick="_gaq.push(['_trackEvent','Support','Click','Big download button FP']);">
+								<?php echo $event_button_text ?>
+								<div style="font-size: 2.5vw;margin-top: 5%">
+										Videolink will be made available here as soon as possible.
+								</div>
+								<div><img src="<?php echo get_site_url()?>/wp-content/themes/cphsuborbitals/img/pointer-black.png" style="width: 12%;"></div>
+							</a>
+						</td>
+						
+					<?php }?>
+				<?php } else {?>
+				<?php }?>
+						
+						
+						
+						
+						
+						<td class="main_front_big_button_S2O3_3">
+							<a style="text-decoration: none;color: black;" href="<?php $server_name ?>/ressources/" onclick="_gaq.push(['_trackEvent','Support','Click','Big download button FP']);">
+								Download posters, wallpapers and more here.
+								<div><img src="<?php echo get_site_url()?>/wp-content/themes/cphsuborbitals/img/pointer-black.png" style="width: 12%;"></div>
+							</a>
+						</td>
+						<td>
+							&nbsp;
+						</td>
+					</tr>
+				</table>
+			</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+			<div class="main_front_section_2_overlay_4 overlay_show">
+				<div>Aiming high:</div>
+				<div>The manned Spica mission</div>
+			</div>
+			<div class="main_front_section_2_overlay_5 overlay_show">
+				Every step we take is leading to flying a person into space on what will be our biggest rocket: Spica
+			</div>
+
+			<a style="text-decoration: none;" rel="wp-video-lightbox" href="https://www.youtube.com/watch?v=1i3HDv2s7io&amp;width=640&amp;height=640" title="" onclick="_gaq.push(['_trackEvent','Media','Click','Watch Us on FP']);">
+				<div class="main_front_section_2_overlay_6 overlay_show">
+					<span style="">See our intro video</span>
+					<img src="<?php echo get_site_url()?>/wp-content/themes/cphsuborbitals/img/pointer-black.png" style="width: 12%; vertical-align: middle;">
+				</div>
+			</a>
+
+		</div>
+
+
+		<?php //----------- Manned top section end -------------------------------------------------------------------------?>
+
+
+		<?php //----------- Widget section ---------------------------------------------------------------------------------?>
+
+		<div class="wrapper_front_section_3">
+			<div class="main_front_section_3"></div>
+
+			<div class="main_front_section_3_overlay_1 overlay_show">
+
+				<div class="front-widget">
+					<?php // lastest news col ?>
+					<div class="widget-header-front">Latest blog posts</div>
+					<ul>
+						<?php if ( $query_blog->have_posts() ) : $query_blog->have_posts();
       while ( $query_blog->have_posts() ) :	$query_blog->the_post(); ?>
-		 		<li>
-        <?php
+						<li>
+							<?php
         printf( '<span class="date">%s</span>', get_the_date( 'd.m.Y' ) );
         printf( '<div class="widget-content"><a href="%s">%s</a></div>', get_permalink(), get_the_title() );
-			  ?>  
-				</li>
-      <?php endwhile;
+			  ?>
+						</li>
+						<?php endwhile;
       else :
       endif;    
       wp_reset_postdata();
       ?>
-      </ul>
-    </div>
-      
-      
-  </div> 			
+					</ul>
+				</div>
 
 
-  
-</div>
-
-<?php //----------- Widget section end -----------------------------------------------------------------------------?>
-
-<?php //----------- Section 4 --------------------------------------------------------------------------------------?>
-
-<div class="wrapper_front_section_4">
-  <div class="main_front_section_4"></div>			
-</div>  
-
-<?php //----------- Section 4 end ----------------------------------------------------------------------------------?>
-
-<?php //----------- Section 5 --------------------------------------------------------------------------------------?>
-
-<div class="wrapper_front_section_5">
-  <div class="main_front_section_5"></div>
-  <div class="main_front_section_5_overlay_1 overlay_show">
-  	We’re 100 % crowdfunded.</br>
-		Donate or join the support group.</br>
- 		your money is the rocketfuel! 
-  </div>	
-
-  <a href="<?php echo (site_url().'/support-us/'); ?>"  onclick="_gaq.push(['_trackEvent','Support','Click','Donate on bottom FP']);">
-  <div class="main_front_section_5_overlay_2 overlay_show"></div>
-	</a>
-			
-</div>  
-
-<?php //----------- Section 5 end ----------------------------------------------------------------------------------?>
+			</div>
 
 
 
+		</div>
+
+		<?php //----------- Widget section end -----------------------------------------------------------------------------?>
+
+		<?php //----------- Section 4 --------------------------------------------------------------------------------------?>
+
+		<div class="wrapper_front_section_4">
+			<div class="main_front_section_4"></div>
+		</div>
+
+		<?php //----------- Section 4 end ----------------------------------------------------------------------------------?>
+
+		<?php //----------- Section 5 --------------------------------------------------------------------------------------?>
+
+		<div class="wrapper_front_section_5">
+			<div class="main_front_section_5"></div>
+			<div class="main_front_section_5_overlay_1 overlay_show">
+				We’re 100 % crowdfunded.</br>
+				Donate or join the support group.</br>
+				your money is the rocketfuel!
+			</div>
+
+			<a href="<?php echo (site_url().'/support-us/'); ?>" onclick="_gaq.push(['_trackEvent','Support','Click','Donate on bottom FP']);">
+				<div class="main_front_section_5_overlay_2 overlay_show"></div>
+			</a>
+
+		</div>
+
+		<?php //----------- Section 5 end ----------------------------------------------------------------------------------?>
 
 
-<?php
+
+
+
+		<?php
 
 
 
 ?>
 
-</div>
+	</div>
 
-<?php get_footer('frontlaunch'); ?>
+	<?php get_footer('frontlaunch'); ?>
