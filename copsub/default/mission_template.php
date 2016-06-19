@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Mission Landingpage Template
+Template Name: Mission Landingpage Template (Mobile)
 */
 ?>
 
@@ -18,6 +18,8 @@ $url_for_steaming_link = get_youtube_streaming_url_from_text_file();
 $launch_time_date = get_field( 'launch_time_date', 'option' );
 $launch_date = date('F jS', strtotime($launch_time_date));
 $launch_message = get_field( 'front_launch_message', 'option' );
+$time_hiding_countdown_frontpage = get_field( 'time_hiding_countdown_frontpage',  'option' );
+$show_countdown_on_frontpage = get_field( 'show_countdown_on_frontpage',  'option' );
 
 
 
@@ -59,9 +61,42 @@ $launch_message = get_field( 'front_launch_message', 'option' );
 
 				<div class="post-page-content">
 	        <section class="text">             
-        		<div style="padding-bottom: 20px;padding-top:20px;">
-							<?php echo '<div class="front_launch_message">Postponed to 2016</div>'; ?>               
-          	</div>
+  
+						
+						
+						
+						<div style="padding-bottom: 20px;padding-top:20px;">
+							<?php //echo '<div class="front_launch_message">Postponed to 2016</div>'; ?>               
+       
+						
+						
+						
+						
+						<?php                    
+
+					
+		switch ($show_countdown_on_frontpage) {
+			case "hidden":
+				echo '';
+				break;
+			case "message":
+				echo '<div class="front_launch_message">'.$launch_message.' '.$launch_date.'</div>';
+				break;
+			case "countdown":
+				if (strtotime('now') <= $time_hiding_countdown_frontpage) {
+				echo '<div class="front_launch_countdown">';
+				echo do_shortcode( '[ujicountdown id="NextTest" expire="'.$launch_time_date.'" hide="true" url="" subscr="Nexø I Launch" recurring="" rectype="second" repeats=""]' ); 
+				echo '</div>';
+				} else {
+				echo '<div class="front_launch_countdown">';
+				echo '<div class="front_launch_message">'.$launch_message.'</div>';
+				echo '</div>';				
+				}
+				break;
+		}
+		?>
+						
+				   	</div>		
                        
 		        <?php // lastest news col ?>
     		   	<div class="latest-news-widget">
