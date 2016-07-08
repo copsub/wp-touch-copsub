@@ -2,6 +2,14 @@
 /*
 Template Name: Frontpage Sections Template (Mobile)
 */
+
+$activate_war_mode = get_field( 'activate_war_mode',  'option' );
+
+if ($activate_war_mode) {
+
+header("Location: " . site_url() . "/nexo/");
+die();
+}
 ?>
 
 	<?php get_header('front'); 
@@ -98,8 +106,9 @@ if ($front_section_1_active) {
 				break;
 		}
 		?>
-				<?php if($show_countdown_on_frontpage && ($time_hiding_countdown_frontpage >= strtotime(now))) { ?>
-				<?php } else {?>
+				<?php if($show_countdown_on_frontpage && ($time_hiding_countdown_frontpage >= strtotime(now))) { 
+
+			} else {?>
 				<?php } ?>
 			</div>
 
