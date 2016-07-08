@@ -1,4 +1,7 @@
-<?php get_header(); ?>
+<?php 
+$post_videolink_code = get_field( 'post_videolink_code',  $post->ID  );
+
+get_header(); ?>
 
 	<div id="content">
 		<?php while ( wptouch_have_posts() ) { ?>
@@ -28,6 +31,22 @@
 							<?php the_post_thumbnail('large', array( 'class' => 'post-thumbnail wp-post-image' ) ); ?>
 						</div>
 					<?php } ?>
+					
+					
+										<?php
+if(has_term('video', 'category', $post)) {
+?>
+<div>
+	
+
+<iframe width="878" height="494" src="https://www.youtube.com/embed/<?php echo $post_videolink_code; ?>?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+	</div>
+<?php	
+}
+ ?>
+					
+					
+					
 					<?php wptouch_the_content(); ?>
 					<?php if ( bauhaus_should_show_taxonomy() ) { ?>
 						<?php if ( wptouch_has_categories() || wptouch_has_tags() ) { ?>
