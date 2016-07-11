@@ -123,7 +123,19 @@ If ($activate_war_mode) 	{
 	</tr>
 </table>
 				
-				
+	<table style="width: 100%;vertical-align:bottom;  padding-bottom: 1.0vw; background-color: #e7e7e7; margin-top: 1.0vw;">
+	<tr>
+		<td style="height: 6.0vw; padding: 2.0vw 1.0vw 1.0vw 1.0vw;vertical-align:bottom;" >
+			<span style="Color:black; Font-size:4.5vw;font-weight: bold;line-height: 4.5vw;padding-right: 1.0vw;">For the press</span>
+		</td>
+	</tr>
+	<tr>
+		<td style="height: 27.0vw; padding: 2.0vw 1.0vw 1.0vw 1.0vw;border-top: 1px solid black; 	border-collapse: collapse;border-top-color: #999999" >
+			<?php echo $for_the_press_content ?>
+		</td>
+	</tr>
+</table>
+						
 				
 			<?php		
 /* LIVEBLOG SECTION END  ------------------------------------------------------------------------------------------------------------------------------  */ 
@@ -178,11 +190,29 @@ while ( $query->have_posts() ) :	$query->the_post(); ?>
 	<tr>
 			<td style=" padding: 2.0vw 1.0vw 1.0vw 1.0vw;">
 			<?php echo $estimated_mission_plan ?>
+				
+				
+				
+				
+				
+				
 		</td>
 	</tr>
 </table>
 				
-				
+<table style="width: 100%;vertical-align:bottom;  padding-bottom: 1.0vw; background-color: #e7e7e7; margin-top: 1.0vw;">
+	<tr>
+		<td style="height: 6.0vw; padding: 2.0vw 1.0vw 1.0vw 1.0vw;vertical-align:bottom;" >
+			<span style="Color:black; Font-size:4.5vw;font-weight: bold;line-height: 4.5vw;padding-right: 1.0vw;">For the press</span>
+		</td>
+	</tr>
+	<tr>
+		<td style="height: 27.0vw; padding: 2.0vw 1.0vw 1.0vw 1.0vw;border-top: 1px solid black; 	border-collapse: collapse;border-top-color: #999999" >
+			<?php echo $for_the_press_content ?>
+		</td>
+	</tr>
+</table>
+			
 
    
 <?php   
@@ -193,7 +223,7 @@ while ( $query->have_posts() ) :	$query->the_post(); ?>
 				
 /* NEWSLETTER-DONATE SECTION START --------------------------------------------------------------------------------------------------------------------  */ 
 
-						If ($activate_war_mode) 	{	
+						If (1) 	{	
 			
 				?>
 	
@@ -276,67 +306,11 @@ while ( $query->have_posts() ) :	$query->the_post(); ?>
 <?php				
 				
 /* MORE ABOUT SECTION END -------------------------------------------------------------------------------------------------------------------------------  */ 
-				
-				
-			
-				
-/* NEWSLETTER-DONATE SECTION START --------------------------------------------------------------------------------------------------------------------  */ 
-
-						If (!$activate_war_mode) 	{	
-			
-				?>
-	
-<table style="width: 100%;  background-color: #FF4F00; margin-bottom:1vw;margin-top:1vw;">
-	<tr>
-		<td style="height: 8.0vw; padding: 2.3vw 1.0vw 2.0vw 1.0vw;text-align: center;" >
-<a style="color: white;font-weight: bold;font-size:25px;text-decoration: none;" href="<?php echo get_site_url()?>/support-us/">Donate here ></a>
-		</td>
-		
-	</tr></table>
-				
-<table style="width: 100%;  background-color: #FF4F00">
-	<tr>		
-		<td style="padding: 2.0vw 1.0vw 1.0vw 1.0vw;">
-			<div>
-				<div style="margin-bottom: 5px;color: white;">
-					Sign up for our newsletter here:
-				</div>
-			
-	<?php echo do_shortcode('[mc4wp_form id="11166"]') ?>
-				</div>
-		</td>
-	</tr>
-</table>				
-				
-				
-
-					
-					
-
-	
-<?php
-						}			
-/* NEWSLETTER-DONATE SECTION END  ---------------------------------------------------------------------------------------------------------------------  */ 
-
-					
-				
 			
 /* PR SECTION START -----------------------------------------------------------------------------------------------------------------------------  */ 
 				
 ?>
 	
-				<table style="width: 100%;vertical-align:bottom;  padding-bottom: 1.0vw; background-color: #FFF; margin-top: 3.0vw;">
-	<tr>
-		<td style="height: 6.0vw; padding: 2.0vw 1.0vw 1.0vw 1.0vw;vertical-align:bottom;" >
-			<span style="Color:black; Font-size:4.5vw;font-weight: bold;line-height: 4.5vw;padding-right: 1.0vw;">For the press</span>
-		</td>
-	</tr>
-	<tr>
-		<td style="height: 27.0vw; padding: 2.0vw 1.0vw 1.0vw 1.0vw;border-top: 1px solid black; 	border-collapse: collapse;border-top-color: #999999" >
-			<?php echo $for_the_press_content ?>
-		</td>
-	</tr>
-</table>
 				
 				
 
