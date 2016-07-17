@@ -1131,9 +1131,9 @@ form#commentform input {
   top: 24.5%;
   bottom: 50%;
   right: 5%;
-  left: 30%;
+  left: 15%;
   color: #FFF;
-	text-align: right;
+	text-align: left;
 	font-weight: bold;
   font-size: 4.5vw;
 }
@@ -1143,19 +1143,21 @@ form#commentform input {
   top: 51%;
   bottom: 25%;
   right: 5%;
-  left: 40%;
+  left: 15%;
   /* background-image is set in header*/	
 	background-repeat: no-repeat;
 	background-position: right center;
 	background-size: contain;
+  font: 3.5vw helvetica, sans-serif;
+
 }
 
 .main_front_section_1_overlay_4 {
   position: absolute;
   top: 79%;
   bottom: 5%;
-  right: 5%;
-  left: 50%;
+  right: 35%;
+  left: 15%;
   color: #000;
   background-color: #FF4F00;
   background-image: url('../img/pointer-black.png');

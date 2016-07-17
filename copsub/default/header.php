@@ -33,7 +33,6 @@
 			  padding-top: <?php echo $background_image_front_section_1_ratio; ?>%;
 			}
 			.main_front_section_1_overlay_3 {
-				background-image:url('<?php echo get_site_url()?>/wp-content/themes/cphsuborbitals/img/nexoepatch.png'); 
 			}
 			
 			.wrapper_front_section_2 {

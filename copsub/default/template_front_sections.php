@@ -124,14 +124,6 @@ if ($front_section_1_active) {
 			<?php //---Front Text Launch section End ---------- ?>
 
 
-			<?php //---Front Mission Patch section--------------- ?>
-
-			<div class="main_front_section_1_overlay_3 overlay_show">
-			</div>
-
-			<?php //---Front Mission Patch section End ---------- ?>
-
-
 			<?php //---Front Mission Page Button section--------------- ?>
 
 			<a style="text-decoration: none;" href="<?php echo $front_section_1_link_button ?>" title="" onclick="_gaq.push(['_trackEvent','Media','Click','Watch Us on FP']);">
@@ -141,6 +133,26 @@ if ($front_section_1_active) {
 			</a>
 
 			<?php //---Front Mission Page Button End ---------- ?>
+
+			
+			
+			<?php //---Front Mission Patch section--------------- ?>
+
+			<div class="main_front_section_1_overlay_3 overlay_show">
+							<div>
+				<div style="margin-bottom: 5px;color: white;">
+					Sign up for our newsletter:
+				</div>
+			
+	<?php echo do_shortcode('[mc4wp_form id="11166"]') ?>
+				</div>			
+			
+		</div>
+			</div>
+
+			<?php //---Front Mission Patch section End ---------- ?>
+
+
 
 
 
